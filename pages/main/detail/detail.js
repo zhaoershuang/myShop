@@ -1,4 +1,6 @@
+var WXBizDataCrypt = require('../detail/WXBizDataCrypt.js');
 // pages/main/detail/detail.js
+const app = getApp();
 Page({
 
   /**
@@ -16,9 +18,36 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // wx.getUserInfo({
+    //   data: { withCredentials:true},
+    //   success: function(res){
+    //     console.log(app);
+    //   }
+    // })
+    // 获取用户信息
+    wx.getSetting({
+      success: res => {
+        console.log(res);
+        if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
+          wx.getUserInfo({
+            success: res => {
+              console.log(res);
+              // var iv = res.iv;
+              // var appId = "wx6cfbf77416fab158";
+              // var sessionKey = 'tiihtNczf5v6AKRyjwEUhQ=='
+              // var encryptedData = res.encryptedData;
+              // var WXBizDataCrypt = require('./WXBizDataCrypt');
+              // var pc = new WXBizDataCrypt(appId, sessionKey);
+              // var data = pc.decryptData(encryptedData, iv);
+              // console.log("解密结果");
+              
+            }
+          })
+        }
+      }
+    })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -44,7 +73,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+   
   },
 
   /**

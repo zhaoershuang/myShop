@@ -12,7 +12,7 @@ Page({
   toDetail:function(e){
     console.log(e.target.id);
     wx.navigateTo({
-      url: '../main/detail/detail?id=' + e.target.id
+      url: 'detail/detail?id=' + e.target.id
     })
   }
 })

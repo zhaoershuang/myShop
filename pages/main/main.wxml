@@ -19,37 +19,37 @@
       <image id='10' bindtap="toDetail" src="../pic/pic1.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥15.00）</text>
     </view>
-    <view class='rightData'>
+    <view id='10' bindtap="toDetail" class='rightData'>
      <image src="../pic/pic2.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥9.00）</text>
     </view>
   </view>
-   <view class='colData'>
+   <view id='10' bindtap="toDetail" class='colData'>
     <view class='leftData'>
       <image src="../pic/pic2.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥15.00）</text>
     </view>
-    <view class='rightData'>
+    <view id='10' bindtap="toDetail" class='rightData'>
      <image src="../pic/pic1.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥9.00）</text>
     </view>
   </view>
-   <view class='colData'>
+   <view id='10' bindtap="toDetail" class='colData'>
     <view class='leftData'>
       <image src="../pic/pic1.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥15.00）</text>
     </view>
-    <view class='rightData'>
+    <view id='10' bindtap="toDetail" class='rightData'>
      <image src="../pic/pic2.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥9.00）</text>
     </view>
   </view>
-   <view class='colData'>
+   <view  id='10' bindtap="toDetail"class='colData'>
     <view class='leftData'>
       <image src="../pic/pic2.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥15.00）</text>
     </view>
-    <view class='rightData'>
+    <view id='10' bindtap="toDetail" class='rightData'>
      <image src="../pic/pic1.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥9.00）</text>
     </view>
