@@ -11,7 +11,7 @@ Page({
   },
   toDetail:function(e){
     console.log(e.target.id);
-    wx.redirectTo({
+    wx.navigateTo({
       url: '../main/detail/detail?id=' + e.target.id
     })
   }

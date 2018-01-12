@@ -1,0 +1,13 @@
+<!--pages/main/detail/detail.wxml-->
+<view class='detail-view'>
+  <view class='detail-img'>
+    <image class='detail-img-data' src='{{picname}}'></image>
+  </view>
+  <view class='detail-type'>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}" wx:key="{{items.name}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
