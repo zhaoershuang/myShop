@@ -1,0 +1,53 @@
+/* pages/main/main.wxss */
+.allView {
+  width: 100%;
+  height: 100%;
+  background:#e0e0e0;
+}
+.slide-image{
+  width: 100%;
+  height:100%;
+}
+.slide-image-data{
+  width: 100%;
+  height: 85%;
+}
+
+.colDataTitle {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: tomato
+}
+
+.colData {
+  height: 200px;
+  margin-bottom: 15px;
+}
+.leftData{
+  float: left;
+  width: 48%;
+  height: 100%;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  background:white;
+  padding-bottom: 5px
+}
+.rightData{
+  float: right;
+  width: 48%;
+  height: 100%;
+  border-radius: 0px 0px 5px 5px;
+  text-align: center;
+  background:white;
+  padding-bottom: 5px
+}
+.product-info {
+  text-align: center;
+  color: tomato;
+  font-size: 12px;
+  height:100%;
+
+}
