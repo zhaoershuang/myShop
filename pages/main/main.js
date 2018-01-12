@@ -8,5 +8,11 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 1000
+  },
+  toDetail:function(e){
+    console.log(e.target.id);
+    wx.redirectTo({
+      url: '../main/detail/detail?id=' + e.target.id
+    })
   }
 })

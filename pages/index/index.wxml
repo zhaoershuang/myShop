@@ -7,6 +7,9 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <view class="index-pic">
+    <image class="index-pic-data"  src="../pic/car.png" ></image>
+  </view>
   <view class="usermotto">
     <text class="user-motto" bindtap="toShop">{{motto}}</text>
   </view>

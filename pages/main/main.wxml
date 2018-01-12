@@ -1,7 +1,7 @@
 <view class='allView'>
   <swiper indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:key="imgUrlsId">
       <swiper-item>
         <image src="{{item}}" class="slide-image"/>
       </swiper-item>
@@ -10,9 +10,13 @@
   <view class='colDataTitle'>
         【热销商品】
   </view>
+ <!-- <view class='home-icon'>
+      <image class="home-icon-data"  src="../pic/home.png" ></image>
+  </view> -->
+
   <view class='colData'>
     <view class='leftData'>
-      <image src="../pic/pic1.png" class="slide-image-data"/>
+      <image id='10' bindtap="toDetail" src="../pic/pic1.png" class="slide-image-data"/>
       <text class='product-info'>销售商品（￥15.00）</text>
     </view>
     <view class='rightData'>
